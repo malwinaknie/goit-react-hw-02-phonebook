@@ -56,9 +56,8 @@ class App extends Component {
     const filteredContacts = this.getFilteredContacts();
     return (
       <div className={(styles['container'])}>
-        <h1>Phonebook</h1>
+        <h2>Phonebook</h2>
         <ContactForm onSubmit={this.addContact} />
-
         <h2>Contacts</h2>
         <Filter value={filter} onChange={this.handleFilterChange}/>
         <ContactList
