@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-const Filter = ({value, onChange}) => {
+const Filter = ({ value, onChange }) => (
     <div>
         <label>
             Find contacts by name:
@@ -13,6 +13,6 @@ const Filter = ({value, onChange}) => {
 />
         </label>
     </div>
-}
+)
 
 export default Filter;

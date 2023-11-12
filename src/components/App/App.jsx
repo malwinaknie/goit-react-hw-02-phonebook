@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ContactForm from '../ContactForm/ContactForm';
-import Filter from '../Filter/Filter';
+import Filter from 'components/Filter/Filter';
 import ContactList from '../ContactList/ContactList';
 import { nanoid } from 'nanoid';
 import styles from './App.module.css'
@@ -60,7 +60,7 @@ class App extends Component {
         <ContactForm onSubmit={this.addContact} />
 
         <h2>Contacts</h2>
-        <Filter value={filter} onChange={this.handleFilterChange} />
+        <Filter value={filter} onChange={this.handleFilterChange}/>
         <ContactList
           contacts={filteredContacts}
           deleteContact={this.deleteContact}
